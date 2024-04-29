@@ -41,9 +41,9 @@ body
 {
     background-image:url(https://th.bing.com/th/id/R.d84bbf87dd2399abd300dd52f6992a63?rik=u2gO4NIXUJa1sQ&riu=http%3a%2f%2fgonintendo.com%2fsystem%2ffile_uploads%2fuploads%2f000%2f025%2f479%2foriginal%2fitud.png&ehk=fSHkkKyy3jF2EqZ01eDVec69d40lOwvfYLfWj1%2b2YmY%3d&risl=&pid=ImgRaw&r=0);
     background-attachment: fixed;
-    text-shadow:0 0 10px white ;
+    text-shadow:0 0 10px black ;
     font-weight: bold;
-    color: rgb(0 75 105);
+    color: white;
 }
 
 table
