@@ -54,13 +54,13 @@ table
 a
 {
     font-style: bold;
-    color: rgb(0, 225, 255);
+    color: rgb(0, 20, 255);
 }
 
 a:hover
 {
     font-style: bold;
-    color: rgb(0, 90, 255);
+    color: rgb(0, 130, 255);
 }
 
 th
