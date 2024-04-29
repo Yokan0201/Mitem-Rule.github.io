@@ -1,0 +1,85 @@
+header
+{
+    background-color: rgb(190, 80, 5);
+    align-content: right;
+}
+
+.button
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    padding: 0.7em;
+    text-align: center;
+    background: rgb(0, 60, 255);
+    color: rgb(255, 255, 255);
+    transition: 0.3s0;
+}
+
+.Green
+{
+    color: lime;
+}
+
+.Red
+{
+    color: red;
+}
+
+.Blue
+{
+    color: blue;
+}
+
+.itemtable
+{
+    margin-bottom: 30px;
+}
+
+body
+{
+    background-image:url(https://www.pngkit.com/png/full/182-1827420_block-of-grass-from-the-game-minecraft-minecraft.png);
+    background-attachment: fixed;
+    text-shadow:0 0 10px white ;
+    font-weight: bold;
+}
+
+table
+{
+    background-color: white;
+}
+
+a
+{
+    font-style: bold;
+    color: rgb(0, 110, 255);
+}
+
+a:hover
+{
+    font-style: bold;
+    color: rgb(0, 0, 255);
+}
+
+th
+{
+    background-color: rgb(140, 210, 215);
+    text-shadow: 0 0 10px rgb(85, 255, 190);
+}
+
+td
+{
+    text-shadow: 0 0 5px rgb(100, 100, 100);
+}
+
+h2
+{
+    color: rgb(45, 125, 5);
+}
+
+hr
+{
+    height: 5px;
+    background-color:rgb(15, 0, 160);
+}
