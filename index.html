@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mitem - ルール</title>
+        <meta content="まいてむ マイテム Mitem">
+
+        <link rel="stylesheet" href="Mitemcss.css">
+
+    </head>
+
+    <body>
+        <header style="position:fixed;">
+            <a href="#mokuji"><div class="button">目次へ</div></a>
+        </header>
+
+        <h1>Mitem - ルール説明ページ</h1>
+
+        <hr id="mokuji">
+
+        <h2>目次</h2>
+
+        <ul>
+            <li><a href="#gaiyou">Mitemの概要</a></li>
+            <li><a href="#start">ゲーム開始までの流れ</a></li>
+            <li><a href="#play">ゲームの進行</a></li>
+            <li><a href="#myturn">自分のターンが来た場合</a>
+                <ul>
+                    <li><a href="#use">アイテムを使う</a></li>
+                    <li><a href="#trush">アイテムを捨てる</a></li>
+                    <lI><a href="#end">ターンエンド</a></lI>
+                </ul>
+            </li>
+            <li><a href="#otherturn">他プレイヤーのターン中</a></li>
+            <li><a href="#item">各アイテムの効果</a></li>
+            <li><a href="#list">アイテム一覧表</a></li>
+        </ul>
+        
+        <hr id="gaiyou">
+
+        <h2>Mitemの概要</h2>
+        <p><b>Mitem(マイテム)のルールページへようこそ！</b><br>
+            Mitem(以下、本ゲームと称する)は、Minecraftで遊べるカードゲームです。<br>
+            ゲームはターン制で進行し、様々なアイテムを使用して他プレイヤーを倒し切ると優勝となります。
+        </p>
+        <hr id="start">
+
+        <h2>ゲーム開始までの流れ</h2>
+        <ul>
+            <li><p>まず最初に、プレイヤーは<b>『参加者』</b>と<b>『観戦者』</b>に分かれます。<br>
+               『参加者』はゲームに参加でき、<b>2人以上、4人以下必要</b>です。<br>
+               『観戦者』はゲームに参加できず、観戦となります。<b>いなくても問題はありません。</b></p>
+            </li>
+
+            <li><p>参加人数が確定したら、『参加者』の中からランダムで4つの色(以下、カラータグと表記)が振り分けられます。</p>
+                <p>カラータグの種類は、『White』<font class="Green">『Green』</font><font class="Red">『Red』</font><font class="Blue">『Blue』</font>の4種類で、人数によって付けられるタグの種類は減少します。<br>
+                また、このカラータグは他プレイヤーと同じになることはありません。<br>
+                カラータグはゲーム進行時によく利用されるので、しっかり確認しておきましょう。</p>
+            </li>
+
+            <li>正常にタグが振り分けられると、いよいよゲーム開始です。</p>
+                <p>ゲームが開始すると、各プレイヤーに5つのランダムなアイテムが配られます。<br>
+                    これらのアイテムは、"手札"と呼ばれます。</p>
+                <p>手札は５枚までしか所有できず、超過した場合は超過分を捨てないといけないため注意しましょう。</p>
+            </li>
+        </ul>
+
+        <hr id="play">
+
+        <h2>ゲームの進行</h2>
+        <ul>
+            <li>
+                <p>本ゲームはターン制のゲームで、原則１ターンに１回行動です。<br>
+                    ターンの進み方は、White→<font class="Green">Green</font>→<font class="Red">Red</font>→<font class="Blue">Blue</font>となります。(欠員の場合はスキップ)
+                </p>
+            </li>
+
+            <li>
+                <p>ゲームの勝利条件は、アイテムを駆使して他プレイヤーの体力を０にし、最後の一人になるまで生き残ることです。</p>
+            </li>
+
+            <li>
+                <p>画面の右端には常時、参加中のプレイヤーの名前と対応したカラータグが表示されています。</p>
+            </li>
+
+            <li>
+                <p>ここからは、『自分のターンの場合』と『他プレイヤーのターン中の場合』に分けて説明させていただきます。</p>
+                <ul>
+                    <li>
+                        <hr id="myturn">
+                        <h2>自分のターンが来た場合</h2>
+                        <ul>
+                            <li>
+                                <p>自分にターンが回ってきたら、毎回手札が１枚ドローされます。<br>
+                                ここで手札が５枚より多くなったら、超過している分手札を捨ててから行動を選択できるようになります。</p>
+                            </li>
+                            <li>
+                                <p>『行動』は原則１ターン１回行動で、</p>
+                                    <ol>
+                                        <li><a href="#use">『アイテムを使う』</a></li>
+                                        <li><a href="#trush">『アイテムを捨てる』</a></li>
+                                        <li><a href="#end">『ターンエンド』</a></li>
+                                    </ol>
+                                    の３つから１つだけ選んで行動することができます。
+                                    <p>自分のターンが来るとインベントリ内に３種類のブロックが渡されるので、それぞれ対応したブロックを捨てることで選択できます。</p>
+                            </li>
+                            <li>  
+                                <ol>
+                                    <li>
+                                        <hr id="use">
+                                        <h2>アイテムを使う</h2>
+                                        <p>
+                                            インベントリから『エメラルドブロック』を捨てることで、アイテムを使うことができます。<br>
+                                            この行動を選択すると部屋にディスペンサーが出現するので、その中に使いたい手札を入れることでアイテムを使うことができます。
+                                        </p>
+                                        <p>アイテムを使うとそのアイテムの効果が発動し、使ったアイテムは消費されターンが経過します。</p>
+                                        <p>行動を選びなおしたい場合は、インベントリにある『棒』を捨てて下さい。</p>
+                                        <p>アイテムを使う際、使う相手を選ぶことがあります。その時は、インベントリにカラータグと同じ４色のコンクリートが渡されるので、狙う相手のカラータグと同じ色のコンクリートを捨ててください。</p>
+                                    </li>
+
+                                    <li>
+                                        <hr id="trush">
+                                        <h2>アイテムを捨てる</h2>
+                                        <p>
+                                            インベントリから『コンポスター』を捨てることで、アイテムを捨てることができます。<br>
+                                            この行動を選択すると部屋にディスペンサーが出現するので、その中に捨てたい手札を入れることでアイテムを捨てることができます。
+                                        </p>
+                                        <p>アイテムを捨てるとそのアイテムの効果は発動せず、アイテムの消費だけが行われ、ターンが経過します。<br>
+                                            手札を減らしたいときなどに活用しましょう。</p>
+                                        <p>行動を選びなおしたい場合は、インベントリにある『棒』を捨ててください。</p>
+                                    </li>
+
+                                    <li>
+                                        <hr id="end">
+                                        <h2>ターンエンド</h2>
+                                        <p>インベントリから『エンドストーン』を捨てることで、何もせず自分のターンを終わらせることができます。</p>
+                                        <p>手札の温存や、使える手札がないときなどに使いましょう。</p>
+                                        <p>１度『ターンエンド』を選ぶと選択しなおせないので注意しましょう。</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <hr id="otherturn">
+                        <h2>他プレイヤーのターン中</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    他プレイヤーのターン時は、基本的になにもできません。ただし、『他プレイヤーが自分に対してアイテムを使ったとき』に行動することができます。<br>
+                                    自分にアイテムを使われたとき、自分の手札を使って身を守ったりすることができます。(ゲーム内では『対抗』と呼ばれます)
+                                </p>
+                                <p>
+                                    自分にアイテムが使われると、通知がくると同時にシーランタンとレッドストーンランプが配られるので、対抗する場合はシーランタンを捨ててから対抗に使うアイテムを捨てます。
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr id="item">
+
+        <h2>各アイテムの効果</h2>
+        <ul>
+            <li>
+                <p>
+                    アイテムには、プレイヤーにダメージを与えるものやゲームの流れを変えるものなどがあります。それらの特徴などによって『分類』がつけられています。
+                </p>
+                分類は全部で
+                <ol>
+                    <li>物理</li>
+                    <li>魔法</li>
+                    <li>攻撃</li>
+                    <li>防御</li>
+                    <li>カウンター</li>
+                    <li>影響</li>
+                </ol>
+                <p>の６つがあります。<br>
+                アイテムによっては複数の分類を持っていたり、特定の分類を持つアイテムに効果を発揮するアイテムなどがあります。<br>
+                下にアイテム効果の一覧表を設けているのでご活用ください。</p>
+            </li>
+            <li>
+                また、使うタイミングによって、アイテムは大まかに２つのタイプに分けられます。
+                <ul>
+                    <li>主体型…主に自分のターン時に使うアイテム。"攻撃"や"影響"などが含まれます。</li>
+                    <li>受動型…主に対抗時に使うアイテム。"防御"や"カウンター"などが含まれます</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr id="list">
+
+        <h2>アイテム一覧表</h2>
+        <ul>
+            <li>
+                <b>表の見方</b>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">アイテム名</th><td width="40%">アイテムのタイプ<br>アイテムの分類</td>
+                    </tr>
+                    <tr>
+                        <td style="align-items: center;">アイテムの見た目</td><td>アイテムの効果</td>
+                    </tr>
+                </table>
+                ※本ゲームでは、１ダメージ＝♡１コ分のダメージとして表記しています。
+                <hr style="color: white;">
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">リボルバー銃</th><td width="40%">主体型<br>攻撃・物理</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://img.game8.jp/1652822/68520f13ccbda222378c1ac0c9624887.png/show" height="70px"></div></td>
+                        <td style="align-items: center;">指定したプレイヤー1人に対して1ダメージを与える。</td>
+                    </tr>
+                </table>
+                <p></p>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">ナイフ</th><td width="40%">主体型<br>攻撃・物理</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://monster-mcpe.com/uploads/posts/2021-04/1619051115_amethyst_shard.png" height="70px"></div></td>
+                        <td>指定したプレイヤー1人に対して1ダメージを与える。</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">鈍器</th><td width="40%">主体型<br>攻撃・物理</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://staticg.sportskeeda.com/editor/2021/06/4c12e-16244681549348-800.jpg" height="70px"></div></td>
+                        <td>指定したプレイヤー1人に対して1ダメージを与える。</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">防弾チョッキ</th><td width="40%">受動型<br>防御</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/6/6d/Leather_JE2_BE2.png" height="70px"></div></td>
+                        <td>リボルバー銃からのダメージを防ぐ。</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">分厚い雑誌</th><td width="40%">受動型<br>防御</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://th.bing.com/th/id/OIP.1EMCVUeWwmp9e_K47_GQUAAAAA?rs=1&pid=ImgDetMain" height="70px"></div></td>
+                        <td>ナイフからのダメージを防ぐ。</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">ヘルメット</th><td width="40%">受動型<br>防御</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_ja_gamepedia/b/ba/Shulker_Shell.png" height="70px"></div></td>
+                        <td>鈍器からのダメージを防ぐ。</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">物理カウンター</th><td width="40%">受動型<br>カウンター</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://th.bing.com/th/id/OIP.O38ErgjHqtsu1nAcdVQ5MAAAAA?rs=1&pid=ImgDetMain" height="70px"></div></td>
+                        <td>
+                            分類が"攻撃・物理"のアイテムに対抗することで、ダメージを無効化し、相手にそのまま跳ね返す。<br>
+                            ※『起死回生』のダメージは半分で返す。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">火属性魔法</th><td width="40%">主体型<br>攻撃・魔法</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_ja_gamepedia/2/27/Blaze_Powder.png?version=34237f7135cf96513d92af8baece310c" height="70px"></div></td>
+                        <td>
+                            指定したプレイヤー1人に対して1.5ダメージを与える。<br>
+                            また、火属性魔法に対抗することでダメージを防ぎ、<br>
+                            草属性魔法に対抗することで逆に相手にダメージを返す。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">水属性魔法</th><td width="40%">主体型<br>攻撃・魔法</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_ja_gamepedia/e/e6/Heart_of_the_Sea.png?version=b845fa65b347181bf1a01987cf25abf4" height="70px"></div></td>
+                        <td>
+                            指定したプレイヤー1人に対して1.5ダメージを与える。<br>
+                            また、水属性魔法に対抗することでダメージを防ぎ、<br>
+                            火属性魔法に対抗することで逆に相手にダメージを返す。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">草属性魔法</th><td width="40%">主体型<br>攻撃・魔法</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://www.minecraftinformation.com/images/large-fern.png" height="70px"></div></td>
+                        <td>
+                            指定したプレイヤー1人に対して1.5ダメージを与える。<br>
+                            また、草属性魔法に対抗することでダメージを防ぎ、<br>
+                            水属性魔法に対抗することで逆に相手にダメージを返す。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">雷属性魔法</th><td width="40%">主体型<br>攻撃・魔法</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://th.bing.com/th/id/OIP.SCxuPHbEUumHcEnTQ0W66wAAAA?rs=1&pid=ImgDetMain" height="70px"></div></td>
+                        <td>
+                            指定したプレイヤー1人に対して2ダメージを与える。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">帯電石</th><td width="40%">受動型<br>防御</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://th.bing.com/th/id/OIP.BPcZLBmjQqD-3FIrU8P58wAAAA?rs=1&pid=ImgDetMain" height="70px"></div></td>
+                        <td>
+                            雷属性魔法に対抗することでダメージを半減できる。<br>
+                            そして帯電石は『雷電石』に変化する。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">雷電石</th><td width="40%">主体型<br>攻撃・魔法</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://th.bing.com/th/id/OIP.JljNRfVWaxL_FPQ2pUFdfgAAAA?rs=1&pid=ImgDetMain" height="70px"></div></td>
+                        <td>
+                            指定したプレイヤー1人に対して2ダメージを与える。<br>
+                            なお、このアイテムはドローでは手に入れることはできず、<br>
+                            帯電石を変化させることで入手できる。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">魔法の護石</th><td width="40%">受動型<br>防御</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_ja_gamepedia/e/ea/Diamond.png" height="70px"></div></td>
+                        <td>
+                            分類が"攻撃・魔法"のアイテムに対抗することで、ダメージを無効化する。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">魔法カウンター</th><td width="40%">受動型<br>カウンター</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_ja_gamepedia/1/14/Magma_Cream.png" height="70px"></div></td>
+                        <td>
+                            分類が"攻撃・魔法"のアイテムに対抗することで、ダメージを無効化し、相手にそのまま跳ね返す。<br>
+                            ※『雷電石』のダメージは半分で返す。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">貫通</th><td width="40%">主体型<br>攻撃・物理</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://img.game8.jp/1652817/a17348a61e99ec4ae62fcfe3779a6236.png/show?1527556535" height="70px"></div></td>
+                        <td>
+                            指定した1人のプレイヤーに対して、0.5ダメージを与える。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">起死回生</th><td width="40%">主体型<br>攻撃・物理</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://mama-asobitai.com/wp-content/uploads/2021/09/0ff792152a4e55b0b7a6958b4ad82198-1.png" height="70px"></div></td>
+                        <td>
+                            指定した1人のプレイヤーに対して、6ダメージを与える。<br>
+                            ※しかし、体力が1.5以下の時にしか使用できない。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">細菌</th><td width="40%">主体型<br>攻撃</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://vignette.wikia.nocookie.net/minecraft_ja_gamepedia/images/d/dd/Melonseeds.png?version=0abc2a1a67cc47e70647476a8af127ee" height="70px"></div></td>
+                        <td>
+                            全プレイヤー(使用者も含む)に対して、0.5ダメージを与える。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">身代わり</th><td width="40%">受動型<br>防御</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_ja_gamepedia/a/af/Rabbit_Hide.png" height="70px"></div></td>
+                        <td>
+                            分類が"攻撃"のアイテムに対抗することで、自分への攻撃を他プレイヤーに擦り付けることができる。<br>
+                            ※攻撃をしてきたプレイヤーには使用できない。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">回復薬</th><td width="40%">主体型<br>影響</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://th.bing.com/th/id/OIP.J2D_ufQQg1Xuof3wNAPl3wAAAA?rs=1&pid=ImgDetMain" height="70px"></div></td>
+                        <td>
+                            自身の体力を２回復する。
+                            ※回復薬を使用したことは他プレイヤーに知らされない。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">プラスターン</th><td width="40%">主体型<br>影響</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://th.bing.com/th/id/OIP.VcJqZFQkLz9HB12bHOSP1wAAAA?rs=1&pid=ImgDetMain" height="70px"></div></td>
+                        <td>
+                            使用してから追加で２回行動できるようになる。
+                            ※手札のドローは行われない。
+                            ※プラスターンにプラスターンを重ねても効果が上書きされるだけで加算されない。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">プラスドロー</th><td width="40%">主体型<br>影響</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://www.momohuku.tokyo/wp-content/uploads/2023/11/300px_netherite_upgrade_smithing_template.png" height="70px"></div></td>
+                        <td>
+                            手札を２枚追加でドローできる。<br>
+                            ※手札が４枚以上あるときは使用できない。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">リバース</th><td width="40%">主体型<br>影響</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_ja_gamepedia/9/92/Compass.png" height="70px"></div></td>
+                        <td>
+                            ターンの進行順序を反転することができる。効果は永続。<br>
+                            使用されるたびに反転するため、偶数回使用されると元の順序に戻る。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">スキップ</th><td width="40%">主体型<br>影響</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://th.bing.com/th/id/OIP.NR7cjBVhpkcQHdYcPaqzbQAAAA?rs=1&pid=ImgDetMain" height="70px"></div></td>
+                        <td>
+                            使用者の次のプレイヤーのターンをスキップする。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">アタックバインド</th><td width="40%">主体型<br>影響</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://vignette.wikia.nocookie.net/minecraft/images/8/8a/Cobwebmc.png/revision/latest?cb=20140813054727" height="70px"></div></td>
+                        <td>
+                            使用すると、全プレイヤー(使用者も含む)が３ターンの間、分類に"攻撃"が含まれるアイテムを使用できなくなる。<br>
+                            ※効果発動中は『弱体化』のエフェクトが付与される。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">カウンターバインド</th><td width="40%">主体型<br>影響</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_ja_gamepedia/1/16/Slimeball.png" height="70px"></div></td>
+                        <td>
+                            使用すると、全プレイヤー(使用者も含む)が３ターンの間、分類に"カウンター"が含まれるアイテムで対抗できなくなる。<br>
+                            ※効果発動中は『採掘速度低下』のエフェクトが付与される。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table border="1" width="80%" class="itemtable">
+                    <tr>
+                        <th width="10%" style="text-align: center;">オールカウンター</th><td width="40%">受動型<br>影響</td>
+                    </tr>
+                    <tr>
+                        <td><div style="text-align: center;"><img src="https://gamepedia.cursecdn.com/minecraft_ja_gamepedia/f/f6/Nether_Star.png?version=ebd4d36d6def68c307748e769c27cdf3" height="70px"></div></td>
+                        <td>
+                            分類に"攻撃"が含まれるアイテムに対抗することで、ダメージを無効化し、１ダメージで相手に返す。<br>
+                            ※『細菌』には使用できない。
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </body>
+</html>
